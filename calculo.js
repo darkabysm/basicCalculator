@@ -10,6 +10,9 @@ function num(i) {
 }
 
 function ope(i) {
+    if(n1 != 0 && numPantalla != ""){
+        calculo();
+    }
     n1 = parseInt(numPantalla);
     operador = i;
     numPantalla = "";
