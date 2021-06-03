@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Calculadora/estilo.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+<header>
+    <h1>Calculadora</h1>
+    <h2>Diseño: Martin Joel Beltramino</h2>
+</header>
+<div class="calc">
+    <div>
+        <input type="text" id="pantalla" value="0" disabled>
+    </div>
+    <div class="grid-container">
+        <button class="grid-item" value="1" onclick="num(this.value)">1</button>
+        <button class="grid-item" value="2" onclick="num(this.value)">2</button>
+        <button class="grid-item" value="3" onclick="num(this.value)">3</button>  
+        <button class="grid-item" value="+" onclick="ope(this.value)">+</button>
+        <button class="grid-item" value="4" onclick="num(this.value)">4</button>
+        <button class="grid-item" value="5" onclick="num(this.value)">5</button>  
+        <button class="grid-item" value="6" onclick="num(this.value)">6</button>
+        <button class="grid-item" value="-" onclick="ope(this.value)">-</button>
+        <button class="grid-item" value="7" onclick="num(this.value)">7</button>
+        <button class="grid-item" value="8" onclick="num(this.value)">8</button>
+        <button class="grid-item" value="9" onclick="num(this.value)">9</button>
+        <button class="grid-item" value="*" onclick="ope(this.value)">*</button>
+        <button class="grid-item" onclick="calculo()">=</button>
+        <button class="grid-item" value="0" onclick="num(this.value)">0</button>
+        <button class="grid-item" onclick="limpieza()">C</button>
+        <button class="grid-item" value="/" onclick="ope(this.value)">/</button>
+      </div>
+</div>
+
+<script src="/Calculadora/calculo.js"></script>
+</body>
+
+</html>
